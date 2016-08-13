@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+I am a passionate developer, lecturer, father of two, writes about stuff I like to share with the developers world. 
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[amilsil@gmail.com](mailto:amilsil@gmail.com)

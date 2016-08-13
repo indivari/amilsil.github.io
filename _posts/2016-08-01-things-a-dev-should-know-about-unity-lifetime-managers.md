@@ -1,7 +1,11 @@
 ---
 layout: post
 title: Unity Lifetime Managers, things devs should know about
-categories: jekyll update
+tags:
+- c#
+- unity
+- ioc
+- patterns
 ---
 
 Unity is one of the widely used IOC containers. While using any IOC container, it's always recommeneded to create only the instances that you need. But I have seen many below par unity configurations. In this article I hope to discuss different lifetime managers in order for us to better understand how they work.

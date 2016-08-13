@@ -8,7 +8,7 @@ Unity is one of the widely used IOC containers. While using any IOC container, i
 
 I will use a small program I have written to demonstrate each.
 
-    https://github.com/amilsil/unitytest.git.
+    https://github.com/amilsil/unitytest.git
 
 
 ## The Default
@@ -52,7 +52,7 @@ public class UnityConfig
 }
 {% endhighlight %}
 
-### The dependency hierarchy for the code above
+### Here is the dependency hierarchy for the code above
 
 Both the `Candidate` and `CandidateService` classes each are injected with all of the object classes. The `Candidate` is additionally injected in to the `CandidateService` class.
 

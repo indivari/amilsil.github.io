@@ -21,17 +21,17 @@ I will use a small program I have written to demonstrate each.
 container.RegisterType<IMyObject, MyObject>()
 {% endhighlight %}
 
-When no lifetime manager is defined, unity defaults to `Transient`. That means the instance is **short lived** and an instance is created per evey object that wants one. This, however, is not the best in terms of performance, resource utilization or well, self satisfaction. But **it just works**. 
+When no lifetime manager is defined, unity defaults to `Transient`. That means the instance is **short lived** and an instance is created per every object that wants one. This, however, is not the best in terms of performance, resource utilization or well, self satisfaction. But **it just works**. 
 
 
 ## 5 Lifetime Managers
 Unity comes with 5 lifetime managers. 
 
-1. **Transient** (default) - Creates an instance per injection
-3. **PerResolve** - Creates an instance per resolve
-4. **PerThread** - Creates an instance per thread
-2. **Container Controlled** - Creates an instance per container. Lifetime of the instance is the same of the container.
-5. **Externally Controlled** (not readymade for use) - Instance lifetime is maintained externally.
+1. **Transient** (default) - *Creates an instance per injection*
+3. **PerResolve** - *Creates an instance per resolve*
+4. **PerThread** - *Creates an instance per thread*
+2. **Container Controlled** - *Creates an instance per container. Lifetime of the instance is the same of the container.*
+5. **Externally Controlled** (not readymade for use) - *Instance lifetime is maintained externally.*
 
 All of above has a dedicated usage. Let's just run through a code and the output, that demonstrates what each does. I will skip Externally Controlled lifetime managers here, for that it's a dedicated topic itself how & what usages it has.
 

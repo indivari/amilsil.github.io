@@ -133,17 +133,23 @@ Creating ObjectForTransient // for CandidateService
 1. **Transient**
 
     An instance is created every time it needs to be injected. 
+    
+    >There are two instances each for the first resolve for `Candidate` and `CandidateService`. Another two for the second resolve, and so on.
 3. **PerResolve**
 
     An instance is created every time it needs to be injected, per resolve. If two injections of the same class is required within the same resolve, one single instance is reused.
+
+    >There is one instance for the first resolve, shared by both `Candidate` and `CandidateService`. Another shared one for subsequent resolves.
 4. **PerThread**
 
     An instance is created per thread. Remember though, if you use the managed thread pool, and if a previous thread that had an instance is taken from the ThreadPool, the same instance is used next time.
+
+    >There is one instance for a thread. All instances of the `Candidate` and `CandidateService` share the same single instance of it. However, for the new threads, a new instance is created.
 2. **ContainerControlled**
 
     Only one instance is created per container. This is equal to the **Singleton** pattern.
 
-    >   Remember that traditional Singletons are now dead. For we create hard dependencies with them and hard dependencies make less maintainable code.
+    >   Remember that traditional **Singletons are now dead**. For we create hard dependencies with them and hard dependencies make less maintainable code.
 5. **Externally Controlled**
 
     The instance creation is controlled externally. This is quite rarely used at least in my experience. One usage however is when you are dependent on a third party to create the instances for you. Additionally, those instance creation is too complex to be registered with unity.

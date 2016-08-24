@@ -7,11 +7,12 @@ tags:
 - vscode
 - chrome
 ---
+
+TypeScript debugging for Angular2 can be setup easily with few steps. We just need to configure the transpiler and debugger properly before launching chrome with debugging on. Let's go in steps. 
+
 ![jumbo]({{ site.baseurl }}/images/2016/08/jumbo.png "jumbo")
 
-Let's talk a little about setting up a TypeScript Angular2 development environment with debugging for Chrome. 
-
-`TypeScript` is the recommeneded apprach for developing `Angular2` Applications. Angular.io has a fairly complete documentation for `TypeScript` compared to that `javascript`.
+`TypeScript` is the recommeneded approach for developing `Angular2` Applications. Angular.io has a fairly complete documentation for `TypeScript` compared to that `javascript`.
 
 # 3 basic steps to debugging TypeScript
 

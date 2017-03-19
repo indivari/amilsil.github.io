@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+    {% include meta.html %}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link href="https://fonts.googleapis.com/css?family=Asul|Quicksand" rel="stylesheet">
+    <link rel='shortcut icon' href='{{ site.baseurl }}/images/favicon.ico' type='image/x-icon'/ > 
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+    <nav>
+        <div class="container">
+        <div class="row">
+            <div id="logo">
+                <a href="{{ site.baseurl }}/"><img src="/images/logo.svg"></a>
+            </div>
+            <div id="list" class="col-xs-12">
+                <ul>
+                    <li class="selected"><a href="{{ site.baseurl }}/">Home</a></li>
+                    <li><a href="{{ site.baseurl }}/blog">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+    <div id="main" role="main">
+        {{ content }}
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div id="footer-social-wide">
+                    <ul id="social-links">
+                        {% include social-icons.html %}
+                    </ul>    
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    {% include analytics.html %}
+  </body>
+</html>

@@ -1,22 +1,17 @@
 ---
-layout: default
+layout: new
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-      <div class="entry" style="clear:both;">
-        {{ post.excerpt }}
-      </div>
-      <ul class="tags">
-        {% for tag in post.tags %}
-          <li class="inline archive_list">{{tag}}</li>
-        {% endfor %}
-      </ul>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+<section>
+    <div class="container">
+        <div class="row">
+            <div id="message-container" class="col-xs-6 col-sm-4">
+                <span id="hello">Hello!</span>
+                <p class="introduction">My name is Amil Kumarasinghe and I am a technology enthusiast, developer, mentor from Melbourne, Australia.</p>
+                <p class="joke">At times I am a designer.</p>
+                <p class="joke">At least I like to think so :).</p>
+            </div>
+        </div>
+    </div>
+    <div id="jumbo-background"></div>
+</section>

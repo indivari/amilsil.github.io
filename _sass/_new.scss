@@ -1,0 +1,223 @@
+body {
+    font-family: Quicksand, sans-serif;
+    font-size: 14px;
+    background-color: #CA6161;
+}
+
+#main {
+    background-color: #fff;
+}
+
+/* navigation */
+nav {
+    color: #ddd;
+    background-color: #CA6161;
+    a, a:active, a:visited, a:hover {
+        color:#ddd;
+    }
+    #logo, #list {
+        height: 90px;
+        transition: height .2s ease-out;
+    }
+    #logo { 
+        position: absolute;
+        float: left;
+        width: 0;
+        padding: 10px 0px 23px 15px;
+        transition: all .2s ease-out; 
+        img {
+            height: 80px;
+        }
+        @media screen and (max-width: 640px) {
+            height: 60px;
+            padding: 0;
+            img {
+                height: 60px;
+            }
+        }
+    }
+    #list {
+        @media screen and (max-width: 640px) {
+            height: 60px;
+            padding: 0;
+        }
+        
+        text-align: center;
+        ul {
+            display: inline-block;
+            list-style: none;
+            margin:0;
+            li {
+                @media screen and (max-width: 640px) {
+                    line-height: 60px;
+                    padding: 0 14px;
+                }
+                float: left;
+                line-height: 90px;
+                padding: 0px 30px;
+                transition: all .2s ease-out;
+                a {
+                    line-height: 30px;
+                    display: inline-block;
+                    transition: border 0.2s ease-out;
+                }
+                a:hover {
+                    border-bottom: 3px solid #ddd;
+                    text-decoration: none;
+                }
+            }
+            li.selected {
+                a {
+                    border-bottom: 3px solid #fff;
+                }
+            }
+        }
+    }
+}
+
+/* Jumbo */
+#jumbo-background {
+    background-color: #CA6161;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-width: 600px;
+    height: 0;
+    padding-top: 66.64%; /* (img-height / img-width * container-width) */
+                /* (853 / 1280 * 100) */
+}
+
+#message-container {
+    margin-top: 70px;
+    color: #ddd;
+    position: absolute;
+}
+#message-container #hello {
+    font-family: 'Asul', sans-serif;
+    font-size: 48px;
+}
+#message-container p {
+    color: #ddd;
+    line-height: 30px;
+    font-size: 18px;
+    font-family: Quicksand;
+    transition: all .2s ease-out;
+    text-shadow: 0px 0px 2px #333;
+}
+#message-container p.introduction {
+    margin: 10px 0 35px 0;
+}
+#message-container p.joke {
+    color:#ddd;
+    font-style: italic;
+}
+
+/* Content */
+h1, h2, h3 { 
+    font-family: 'Asul', sans-serif;
+    color: #555;
+}
+h1 {
+    margin: 30px 0 20px 0;
+    line-height: 50px;
+}
+h2 {
+    margin: 50px 0 20px 0;
+}
+h3 {
+    margin: 30px 0 20px 0;
+}
+p {
+    line-height: 30px;
+    color: #555;
+    margin: 20px 0;
+}
+/* Blog page, exerpts of posts */
+.posts {
+    margin: 20px 0;
+    .post {
+        h1 {
+            a { color:#555; }
+        }
+        margin-bottom: 60px;
+        .entry {
+            font-size: 18px;
+            margin: 20px 0 10px 0;
+        }
+    }
+}
+
+/* Post page */
+.container > .row > .post {
+    padding: 50px 15px;
+    @media screen and (max-width: 640px) {
+        padding: 15px 15px;
+    }
+    font-size: 18px;
+    h1 { 
+        font-size: 48px; 
+        line-height: 60px;
+        @media screen and (max-width: 640px) {
+            font-size: 36px;
+            line-height: 40px;
+        }
+    }
+    .comments {
+        margin: 50px 0;
+    }
+    img {
+        max-width: 100%;
+    }
+    ul, ol  {
+        li {
+            line-height: 2em;
+        }
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #CA6161;
+    padding: 30px 0;
+}
+footer a, footer a:active, footer a:visited, footer a:hover {
+    color:#ddd;
+}
+footer #footer-social-wide {
+    text-align: center;
+}
+footer ul#social-links {
+    display: inline-block;
+    list-style: none;
+    font-size: 48px;
+    padding: 0;
+}
+footer ul#social-links li {
+    float: left;
+    padding: 30px 20px;
+    transition: all .2s ease-out;
+}
+footer ul#social-links li:hover {
+    margin: 2px 0;
+}
+footer ul#social-links li a:hover {
+    color: #fff;
+}
+
+@media screen and (max-width: 640px) {
+    #jumbo-background {
+        height: auto;
+        min-height: 400px;
+    }
+    #message-container p {
+        font-size: 14px;
+        line-height: 26px;
+    }
+    footer ul#social-links {
+        font-size: 42px;
+    }
+    footer ul#social-links li {
+        padding: 30px 10px;
+    }
+}

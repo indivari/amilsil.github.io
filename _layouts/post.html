@@ -1,22 +1,27 @@
 ---
-layout: default
+layout: new
 ---
+<div class="container">
+<div class="row">
+  <article class="post col-xs-12 col-md-8">
+    <h1>{{ page.title }}</h1>
+    <ul class="tags">
+      {% for tag in page.tags %}
+        <li class="inline archive_list">{{tag}}</li>
+      {% endfor %}
+    </ul>
+    
+    <div class="entry">
+      {{ content }}
+    </div>
 
-<article class="post">
-  <h1>{{ page.title }}</h1>
-  <ul class="tags">
-    {% for tag in page.tags %}
-      <li class="inline archive_list">{{tag}}</li>
-    {% endfor %}
-  </ul>
-  
-  <div class="entry">
-    {{ content }}
-  </div>
+    <div class="date">
+      <i class="icon-calendar"></i> Written on {{ page.date | date: "%B %e, %Y" }}
+    </div>
 
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>
-
-  {% include disqus.html %}
-</article>
+    <div class="comments">
+      {% include disqus.html %}
+    </div>
+  </article>
+</div>
+</div>

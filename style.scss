@@ -9,7 +9,8 @@
 // Syntax highlighting @import is at the bottom of this file
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
-@import "highlights";
+@import "highlight-base";
+@import "solarized-dark";
 @import "svg-icons";
 @import "bootstrap";
 @import "new";

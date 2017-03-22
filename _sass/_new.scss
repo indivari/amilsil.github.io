@@ -133,9 +133,14 @@ p {
     color: #555;
     margin: 20px 0;
 }
+.page-width {
+    max-width: 860px;
+    margin: 0 auto;
+}
 /* Blog page, exerpts of posts */
 .posts {
     margin: 20px 0;
+    padding: 15px;
     .post {
         h1 {
             a { color:#555; }
@@ -149,7 +154,7 @@ p {
 }
 
 /* Post page */
-.container > .row > .post {
+#post-content > .row > .post {
     padding: 50px 15px;
     @media screen and (max-width: 640px) {
         padding: 15px 15px;

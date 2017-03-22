@@ -9,7 +9,7 @@
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link href="https://fonts.googleapis.com/css?family=Asul|Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Asul|Quicksand|Source+Code+Pro" rel="stylesheet">
     <link rel='shortcut icon' href='{{ site.baseurl }}/images/favicon.ico' type='image/x-icon'/ > 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
@@ -19,7 +19,8 @@
 
   <body>
     <nav>
-        <div class="container">
+        <div class="container-fluid">
+        <div class="page-width">
         <div class="row">
             <div id="logo">
                 <a href="{{ site.baseurl }}/"><img src="/images/logo.svg"></a>
@@ -32,6 +33,7 @@
             </div>
         </div>
         </div>
+        </div>
     </nav>
 
     <div id="main" role="main">
@@ -39,7 +41,7 @@
     </div>
 
     <footer>
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div id="footer-social-wide">
                     <ul id="social-links">

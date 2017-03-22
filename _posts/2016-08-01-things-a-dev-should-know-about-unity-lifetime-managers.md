@@ -12,14 +12,14 @@ Unity is one of the widely used IOC containers. While using any IOC container, i
 
 I will use a small program I have written to demonstrate each.
 
-    https://github.com/amilsil/unitytest.git
+Feel free to clone it from `https://github.com/amilsil/unitytest.git`
 
 
 ## The Default
 
-{% highlight csharp %}
+```csharp
 container.RegisterType<IMyObject, MyObject>()
-{% endhighlight %}
+```
 
 When no lifetime manager is defined, unity defaults to `Transient`. That means the instance is **short lived** and an instance is created per every object that wants one. This, however, is not the best in terms of performance, resource utilization or well, self satisfaction. But **it just works**. 
 
@@ -33,12 +33,12 @@ Unity comes with 5 lifetime managers.
 2. **Container Controlled** - *Creates an instance per container. Lifetime of the instance is the same of the container.*
 5. **Externally Controlled** (not readymade for use) - *Instance lifetime is maintained externally.*
 
-All of above has a dedicated usage. Let's just run through a code and the output, that demonstrates what each does. I will skip Externally Controlled lifetime managers here, for that it's a dedicated topic itself how & what usages it has.
+All of above has a dedicated usage each. Let's just run through a code and output, that demonstrates what each does. I will skip Externally Controlled lifetime managers here, for that it's a dedicated topic itself how & what usages it has.
 
 The Unity registration below is setup with an object each with each different Lifetime Manager. 
 
-{% highlight csharp %}
-public class UnityConfig
+```csharp
+public class UnityConfigChanged
 {
     public static IUnityContainer RegisterComponents()
     {
@@ -54,18 +54,18 @@ public class UnityConfig
         return container;
     }
 }
-{% endhighlight %}
+```
 
 ### Here is the dependency hierarchy for the code above
 
 Both the `Candidate` and `CandidateService` classes each are injected with all of the object classes. The `Candidate` is additionally injected in to the `CandidateService` class.
 
 ![injection hierarchy]({{ site.baseurl }}/images/unity_dependency_brief.jpg "dependency hierarchy")
-For simplicity I only used arrows for one object. But each object is injected alike.
+For simplicity I used arrows for only one object. But each object is injected alike.
 
 The main `Program` class tries to resolve the `CandidateService` a couple of times. Bear in mind here, the `CandidateService` requires instances of all 5 Object classes and the `Candidate` class.
 
-{% highlight csharp %}
+```csharp
 static void Main(string[] args)
 {
     var container = UnityConfig.RegisterComponents();
@@ -93,11 +93,12 @@ static void Main(string[] args)
 
     Console.Read();
 }
-{% endhighlight %}
+```
 
 ## Output
 Here's the output from running the code above.
-{% highlight text%}
+
+```text
 MAIN THREAD 
 Creating all on Thread 8 
 // first resolve
@@ -127,7 +128,7 @@ Creating ObjectForTransient // for Candidate
 Creating ObjectForPerResolve // for Candidate & CandidateService
 Creating ObjectForPerThread // for ThreadB
 Creating ObjectForTransient // for CandidateService
-{% endhighlight %}
+```
 
 ### So, what does this mean?
 1. **Transient**

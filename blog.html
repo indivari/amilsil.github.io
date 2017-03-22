@@ -2,9 +2,10 @@
 layout: new
 ---
 
-<div class="container">
+<div class="container-fluid">
+<div class="page-width">
 <div class="row">
-    <div class="posts col-xs-12 col-sm-8">
+    <div class="posts">
     {% for post in site.posts %}
         <article class="post">
 
@@ -22,5 +23,6 @@ layout: new
         </article>
     {% endfor %}
     </div>
+</div>
 </div>
 </div>

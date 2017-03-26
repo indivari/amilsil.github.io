@@ -50,9 +50,9 @@ export class ExpensesComponent implements OnInit {
 
     <tbody>
         <tr *ngFor="let expense of expenses">
-            <td>{{expense.id}}</td>
-            <td>{{expense.name}}</td>
-            <td>{{expense.amount}}</td>
+            <td>{% raw %}{{expense.id}}}{% endraw %}</td>
+            <td>{% raw %}{{expense.name}}{% endraw %}</td>
+            <td>{% raw %}{{expense.amount}}{% endraw %}</td>
         </tr>
     </tbody>
 </table>

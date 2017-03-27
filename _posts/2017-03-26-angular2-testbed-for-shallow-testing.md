@@ -1,11 +1,13 @@
 ---
 layout: post
-title: Using TestBed for Shallow Testing
+title: Using TestBeds for Shallow Testing Angular2 Components
 tags:
 - typescript
 - angular
 - TDD
 ---
+
+Angular 2 now *supports shallow* testing with *TestBeds*. So we can create a *Test Module* just the same way we create a normal module, inject *Test Doubles* as services, or *Spy* on certain service functions to test Component + HTML both.
 
 This post is to solve a few confusions around getting the *Angular 2 TestBed* to work. It should also show a complete example that works!
 

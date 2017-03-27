@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
     {% include meta.html %}
@@ -9,45 +10,60 @@
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link href='https://fonts.googleapis.com/css?family=Anonymous+Pro:400,400italic' rel='stylesheet' type='text/css'>
-    <link rel='shortcut icon' href='{{ site.baseurl }}/images/favicon.ico' type='image/x-icon'/ > 
+    <link href="https://fonts.googleapis.com/css?family=Asul|Quicksand|Source+Code+Pro" rel="stylesheet">
+    <link rel='shortcut icon' href='{{ site.baseurl }}/images/favicon.ico' type='image/x-icon' />
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml"
+    />
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-  </head>
+</head>
 
-  <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+<body>
+    <nav>
+        <div class="container-fluid">
+            <div class="page-width">
+                <div class="row">
+                    <div id="logo">
+                        <a href="{{ site.baseurl }}/"><img src="/images/logo.svg"></a>
+                    </div>
+                    <div id="list" class="col-xs-12">
+                        <ul>
+                            {% if page.url == '/' %}
+                            <li class="selected"><a href="{{ site.baseurl }}/">Home</a></li>
+                            {% else %} 
+                            <li><a href="{{ site.baseurl }}/">Home</a></li>
+                            {% endif %}
+                            
+                            {% if page.url == '/blog/' %}
+                            <li class="selected"><a href="{{ site.baseurl }}/blog">Blog</a></li>
+                            {% else %} 
+                            <li><a href="{{ site.baseurl }}/blog">Blog</a></li>
+                            {% endif %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
-
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
-        </header>
-      </div>
+    <div id="main" role="main">
+        {{ content }}
     </div>
 
-    <div id="main" role="main" class="container">
-      {{ content }}
-    </div>
-
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
-      </div>
-    </div>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div id="footer-social-wide">
+                    <ul id="social-links">
+                        {% include social-icons.html %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     {% include analytics.html %}
-  </body>
+</body>
+
 </html>

@@ -35,7 +35,7 @@
                             <li><a href="{{ site.baseurl }}/">Home</a></li>
                             {% endif %}
                             
-                            {% if page.url == '/blog/' %}
+                            {% if page.url != '/' %}
                             <li class="selected"><a href="{{ site.baseurl }}/blog">Blog</a></li>
                             {% else %} 
                             <li><a href="{{ site.baseurl }}/blog">Blog</a></li>

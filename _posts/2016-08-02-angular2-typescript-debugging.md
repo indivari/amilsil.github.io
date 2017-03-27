@@ -25,9 +25,9 @@ TypeScript debugging for Angular2 can be setup easily with few steps. We just ne
 
 I have already set up a basic project in github and you are more than welcome to clone from there.
 
-{% highlight text%}
+```text
 https://github.com/amilsil/angular2-ts-debugging.git
-{% endhighlight %}
+```
 
 The project is the most simple angular2 project ever. 
 
@@ -35,8 +35,7 @@ The project is the most simple angular2 project ever.
 
 However **tsconfig.json** has the TypeScript transpiling configurations. I have configured the project to put the generated javascript in the *build* folder, as below.
 
-*tsconfig.json*
-{% highlight json%}
+```json
 {
   "compilerOptions": {
     "target": "es5",
@@ -50,7 +49,7 @@ However **tsconfig.json** has the TypeScript transpiling configurations. I have 
     "outDir": "build"
   }
 }
-{% endhighlight %}
+```
 
 
 
@@ -60,7 +59,7 @@ TypeScript itself is not intepreted by the browsers, thus needs to be **Transpil
 
 Since we transpile the TypeScript to the *./build* folder here, we configure the *.vscode/launch.json* files **webRoot** to **${workspaceRoot}/build** as follows.
 
-{% highlight json%}
+```json
 {
     "version": "0.2.0",
     "configurations": [
@@ -82,7 +81,7 @@ Since we transpile the TypeScript to the *./build* folder here, we configure the
         }
     ]
 }
-{% endhighlight %}
+```
 
 
 ## 3. Installing the Debugger for Chrome vscode extension

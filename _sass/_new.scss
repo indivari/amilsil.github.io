@@ -20,9 +20,8 @@ nav {
         transition: height .2s ease-out;
     }
     #logo { 
-        position: absolute;
+        position: relative;
         float: left;
-        width: 0;
         padding: 10px 0px 23px 15px;
         transition: all .2s ease-out; 
         img {

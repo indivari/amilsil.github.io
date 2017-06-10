@@ -24,10 +24,12 @@
         <div class="container-fluid">
             <div class="page-width">
                 <div class="row">
-                    <div id="logo">
+
+                    <div id="logo" class="col-xs-3">
                         <a href="{{ site.baseurl }}/"><img src="/images/logo.svg"></a>
                     </div>
-                    <div id="list" class="col-xs-12">
+
+                    <div id="list" class="col-xs-6">
                         <ul>
                             {% if page.url == '/' %}
                             <li class="selected"><a href="{{ site.baseurl }}/">Home</a></li>
@@ -42,6 +44,7 @@
                             {% endif %}
                         </ul>
                     </div>
+                    
                 </div>
             </div>
         </div>

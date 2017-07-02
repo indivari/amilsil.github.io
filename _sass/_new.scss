@@ -13,7 +13,8 @@ nav {
     color: #ddd;
     background-color: #CA6161;
     a, a:active, a:visited, a:hover {
-        color:#ddd;
+        color:#eee;
+        text-transform: uppercase;
     }
     #logo, #list {
         height: 90px;
@@ -48,10 +49,12 @@ nav {
             margin:0;
             li {
                 @media screen and (max-width: 640px) {
+                    font-size: 16px;
                     line-height: 60px;
                     padding: 0 14px;
                 }
                 float: left;
+                font-size: 18px;
                 line-height: 90px;
                 padding: 0px 30px;
                 transition: all .2s ease-out;
@@ -143,13 +146,14 @@ p {
     max-width: 860px;
     margin: 0 auto;
 }
+
 /* Blog page, exerpts of posts */
 .posts {
     margin: 20px 0;
     padding: 15px;
     .post {
         h1 {
-            a { color:#555; }
+            a { color:#444; }
         }
         margin-bottom: 60px;
         .entry {

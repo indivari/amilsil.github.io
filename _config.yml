@@ -3,10 +3,10 @@
 #
 
 # Name of your site (displayed in the header)
-name: AmilsPage
+name: IndisPage
 
 # Short bio or description (displayed in the header)
-description: As a dev's life flow!
+description: Live/Love/Give!
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: /images/amil_avatar.jpg
@@ -18,15 +18,15 @@ avatar: /images/amil_avatar.jpg
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email: amilsil@gmail.com
-  facebook: amil.kumarasinghe
+  email: indivarij@gmail.com
+  facebook: indivarijayasundera
   flickr:
-  github: amilsil
+  github: indivari
   instagram:
-  linkedin: amilkumarasinghe
+  linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: amilsil
+  twitter:
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/

@@ -16,6 +16,11 @@ Our destination this time was famous **Wilsons Promontary National Park** which 
 Foster is a remote, rural city which is located about one hour drive away from Wilsons Prom. At first sight, we loved Foster very much for its serenity and simplicity. The local community was very nice and friendly and ready to welcome new visitors to Foster very warmly. Though it is a small town, it had all the basic necessities concentrated within the town centre.
 **Pearl Park** in Foster was a nice and quiet place to spend the time th so many colorful Tulips at the entrance which was very pleasing.
 
+![]({{ site.baseurl }}/images/20171107/pearl1.jpg)
+
+![]({{ site.baseurl }}/images/20171107/pearl2.jpg)
+
+
 ### Wilsons Promontary National Park
 
 Next Morning, we set off to Wilsons Prom National Park. The road to Wilsons Prom from Foster was very scenic too with lots of green meadows and cattle and sheep farms. Wilsons Prom actually was a treasury of so many nice and clean beaches and a range of beautiful mountains , ideal for hiking. Unique landscapes and surrounding beauty of Wilsons Prom are something that never to be forgotten.
@@ -25,6 +30,12 @@ However,apart from squeaky beach and tidal river,  there are not many places tha
 ![]({{ site.baseurl }}/images/20171107/squeaky1.jpg)
 
 ![]({{ site.baseurl }}/images/20171107/squeaky2.jpg)
+
+![]({{ site.baseurl }}/images/20171107/squeaky3.jpg)
+
+![]({{ site.baseurl }}/images/20171107/squeaky4.jpg)
+
+
 
 
 ### Toora Wind Farm
@@ -38,8 +49,14 @@ On our way back, we decided to visit the Toora Wind Farm. The giant wind turbine
 
 On the way to Toora wind farm via Sillockhill road was the scenic lookout. Truly amazing and spectacular views and I think this is a must visit lookout if you are travelling on this route.
 
+![]({{ site.baseurl }}/images/20171107/sillockhill.jpg)
+
+
 ### Agnes Falls
 
 When we continued further up the same road passing the wind farm, there was famous Agnes falls and reserve. The waterfall was a very beautiful one cascading through many levels. Again, this I think is a must see place, if you are a nature lover and want to have a nice walk and spend some time near a lovely waterfall. 
 
 ![]({{ site.baseurl }}/images/20171107/agnes1.jpg)
+
+![]({{ site.baseurl }}/images/20171107/agnes2.jpg)
+

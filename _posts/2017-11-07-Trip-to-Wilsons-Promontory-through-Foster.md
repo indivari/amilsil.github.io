@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Trip to Wilsons Promontary through Foster
+title: Trip to Wilsons Promontory through Foster
 activity-day: 2017-Sep-30
 tags:
-- Wilsons promontary
+- Wilsons promontory
 - beach
 - waterfall
 - parks

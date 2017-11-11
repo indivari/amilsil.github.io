@@ -9,19 +9,19 @@ tags:
 - parks
 ---
 
-Our destination this time was famous **Wilsons Promontary National Park** which is a beautiful coastal wilderness area in southernmost part of Australian mainland. On our way to Wilsons Prom, we stayed one night in **Foster**. 
+Our destination this time was famous **Wilsons Promontory National Park** which is a beautiful coastal wilderness area in southernmost part of Australian mainland. On our way to Wilsons Prom, we stayed one night in **Foster**. 
 
 ### Foster
 
-Foster is a remote, rural city which is located about one hour drive away from Wilsons Prom. At first sight, we loved Foster very much for its serenity and simplicity. The local community was very nice and friendly and ready to welcome new visitors to Foster very warmly. Though it is a small town, it had all the basic necessities concentrated within the town centre.
-**Pearl Park** in Foster was a nice and quiet place to spend the time th so many colorful Tulips at the entrance which was very pleasing.
+Foster is a remote, rural city which is located about one hour drive away from Wilsons Prom. At first sight, we loved Foster very much for its serenity and simplicity. The local community was very nice and friendly and ready to welcome new visitors to Foster very warmly. Though it was a small town, it had all the basic necessities concentrated within the town centre.
+**Pearl Park** in Foster was a nice and quiet place to spend the time with so many colorful Tulips at the entrance which was very pleasing.
 
 ![]({{ site.baseurl }}/images/20171107/pearl1.jpg)
 
 ![]({{ site.baseurl }}/images/20171107/pearl2.jpg)
 
 
-### Wilsons Promontary National Park
+### Wilsons Promontory National Park
 
 Next Morning, we set off to Wilsons Prom National Park. The road to Wilsons Prom from Foster was very scenic too with lots of green meadows and cattle and sheep farms. Wilsons Prom actually was a treasury of so many nice and clean beaches and a range of beautiful mountains , ideal for hiking. Unique landscapes and surrounding beauty of Wilsons Prom are something that never to be forgotten.
 **Squeaky Beach and Tidal river** were two popular tourist attractions. The Squeaky beach has got its name because it makes a funny squeaky sound when people walk on it.
